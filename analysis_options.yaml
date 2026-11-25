@@ -1,7 +1,11 @@
 include: package:flutter_lints/flutter.yaml
+
 analyzer:
-  errors:
-    invalid_assignment: error
-    undefined_method: error
-    undefined_getter: error
-    undefined_identifier: error
+  exclude:
+    - build/**
+    - "**/*.g.dart"
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_const_constructors: false

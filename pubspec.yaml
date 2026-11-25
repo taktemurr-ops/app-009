@@ -1,19 +1,24 @@
-name: butce_360
-description: Private offline family budgeting, expenses, planning, savings and reports.
+name: uyg_butce_ve_harcama_takibi
+description: "Bütçe ve Harcama Takibi – Finans ve Hesaplama uygulaması (studio_core/apps + finans_motoru)."
 publish_to: none
-version: 1.0.0+1
+version: 2.0.0
+
 environment:
-  sdk: '>=3.5.0 <4.0.0'
+  sdk: ">=3.6.0 <4.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  flutter_secure_storage: ^9.2.4
-  intl: ^0.20.2
+  studio_core:
+    git:
+      url: https://github.com/taktemurr-ops/studio-core
+      ref: 92b51dd7d47c300d3611c448b5474fca5f793f2a
+  finans_motoru:
+    git:
+      url: https://github.com/taktemurr-ops/finans-motoru
+      ref: main
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
-flutter:
-  uses-material-design: true
+  flutter_lints: ^5.0.0
